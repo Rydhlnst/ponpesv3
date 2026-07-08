@@ -45,22 +45,22 @@ export async function SiteFooter() {
 
   return (
     <>
-      <footer id="kontak" className="border-t-4 border-primary bg-neutral-950 text-white">
+      <footer id="kontak" className="bg-[#1e3a5f] text-white">
+        {/* Highlighted top banner */}
+        <div className="w-full bg-primary px-4 py-5 text-center">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary-foreground/80">Pondok Pesantren</p>
+          <h2 className="font-heading text-xl sm:text-2xl font-extrabold uppercase tracking-widest text-white leading-tight mt-0.5">
+            Salfakinah Barokah Qur&apos;an
+          </h2>
+          <p className="text-[11px] text-primary-foreground/70 mt-1 italic">Qur&apos;an · Akhlak · Ilmu</p>
+        </div>
+
       <div className="site-shell grid gap-10 py-12 sm:py-16 md:grid-cols-2 lg:grid-cols-4">
-        {/* Column 1: Brand & Logo */}
+        {/* Column 1: Brand */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <Image
-              src={siteConfig.logo}
-              alt={siteConfig.shortName}
-              width={64}
-              height={64}
-              className="size-14 rounded-full bg-white object-cover"
-            />
-            <div>
-              <h3 className="text-base font-bold text-white leading-tight">{siteConfig.shortName}</h3>
-              <p className="text-xs text-white/70">{siteConfig.tagline}</p>
-            </div>
+          <div>
+            <h3 className="text-base font-bold text-white leading-tight font-heading uppercase tracking-wide">{siteConfig.shortName}</h3>
+            <p className="text-xs text-accent-gold mt-0.5">{siteConfig.tagline}</p>
           </div>
           <p className="text-xs text-white/80 leading-relaxed pt-2">
             {plainBrandText}
@@ -130,7 +130,7 @@ export async function SiteFooter() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-6 text-center text-xs text-white/60 bg-black/10">
+      <div className="border-t border-white/10 py-6 text-center text-xs text-white/60 bg-[#0f2236]">
         {footerSection.copyrightText}
       </div>
     </footer>
