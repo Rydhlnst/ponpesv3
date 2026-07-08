@@ -64,16 +64,16 @@ export function SiteHeader({
 
   return (
     <header className="sticky top-0 z-50 w-full shadow-md">
-      {/* Tier 1: Top Bar — hijau gelap */}
-      <div className="w-full bg-primary border-b border-white/10 py-3 sm:py-4">
+      {/* Tier 1: Top Bar — putih */}
+      <div className="w-full bg-white border-b border-border py-3 sm:py-4">
         <div className="site-shell flex items-center justify-between gap-4">
           {/* Brand Info */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
             <div>
-              <p className="font-heading text-base sm:text-lg font-bold text-white tracking-tight leading-tight uppercase">
+              <p className="font-heading text-base sm:text-lg font-bold text-primary tracking-tight leading-tight uppercase">
                 {siteConfig.shortName}
               </p>
-              <p className="text-[10px] text-white/60 italic font-sans leading-none mt-0.5">
+              <p className="text-[10px] text-muted-foreground italic font-sans leading-none mt-0.5">
                 {siteConfig.tagline}
               </p>
             </div>
@@ -82,24 +82,24 @@ export function SiteHeader({
           {/* Right Side: Contact info */}
           <div className="flex items-center gap-1.5 sm:gap-2">
             {/* Info blocks - Desktop & Tablet */}
-            <div className="hidden md:flex items-center gap-4 lg:gap-5 text-xs text-white/80">
+            <div className="hidden md:flex items-center gap-4 lg:gap-5 text-xs text-muted-foreground">
               {siteConfig.email && (
-                <a href={`mailto:${siteConfig.email}`} className="group flex items-center gap-2 hover:text-white transition-colors">
-                  <FaEnvelope className="size-3.5 text-white/70 shrink-0" />
+                <a href={`mailto:${siteConfig.email}`} className="group flex items-center gap-2 hover:text-primary transition-colors">
+                  <FaEnvelope className="size-3.5 text-primary shrink-0" />
                   <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out">
                     {siteConfig.email}
                   </span>
                 </a>
               )}
-              <a href={waHref} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 hover:text-white transition-colors">
-                <FaPhone className="size-3.5 text-white/70 shrink-0" />
+              <a href={waHref} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 hover:text-primary transition-colors">
+                <FaPhone className="size-3.5 text-primary shrink-0" />
                 <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out">
                   {waDisplay}
                 </span>
               </a>
               {siteConfig.officeHours && (
                 <div className="group flex items-center gap-2">
-                  <FaClock className="size-3.5 text-white/70 shrink-0" />
+                  <FaClock className="size-3.5 text-primary shrink-0" />
                   <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out">
                     {siteConfig.officeHours}
                   </span>
@@ -110,13 +110,13 @@ export function SiteHeader({
             {/* Mobile Contact Shortcuts */}
             <div className="flex md:hidden items-center gap-1.5">
               {siteConfig.email && (
-                <Button variant="ghost" size="icon" className="size-9 rounded-none border border-white/20 hover:bg-white/10 text-white p-0" asChild>
+                <Button variant="ghost" size="icon" className="size-9 rounded-none border border-border hover:bg-accent text-primary p-0" asChild>
                   <a href={`mailto:${siteConfig.email}`} aria-label="Kirim Email">
                     <FaEnvelope className="size-4" />
                   </a>
                 </Button>
               )}
-              <Button variant="ghost" size="icon" className="size-9 rounded-none border border-white/20 hover:bg-white/10 text-white p-0" asChild>
+              <Button variant="ghost" size="icon" className="size-9 rounded-none border border-border hover:bg-accent text-primary p-0" asChild>
                 <a href={`tel:${siteConfig.whatsapp}`} aria-label="Telepon">
                   <FaPhone className="size-4" />
                 </a>
