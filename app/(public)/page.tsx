@@ -48,7 +48,7 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col">
-      {/* Light Background Hero Section matching the Al-Itqan screenshot */}
+      {/* Hero Section */}
       <section className="relative min-h-[75vh] sm:min-h-[80vh] md:min-h-[85vh] flex items-center justify-start overflow-hidden bg-slate-50 dark:bg-neutral-900 border-b border-border">
         {/* Background Image on the right half or full screen with opacity */}
         <div className="absolute inset-y-0 right-0 z-0 w-full md:w-2/3 lg:w-7/12">

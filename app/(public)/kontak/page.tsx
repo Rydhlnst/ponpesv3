@@ -23,17 +23,17 @@ export default async function KontakPage() {
   const addressVal = alamatMethod?.value || siteConfig.address
 
   const waMethod = contact.methods.find((m) => m.type.toLowerCase() === "whatsapp")
-  const waVal = waMethod?.value || "082311649025"
+  const waVal = waMethod?.value || "082177215500"
 
   const emailMethod = contact.methods.find((m) => m.type.toLowerCase() === "email")
-  const emailVal = emailMethod?.value || "info@alitqan.id"
+  const emailVal = emailMethod?.value || "salfakinahbarokahquran@gmail.com"
 
   const hoursMethod = contact.methods.find((m) => m.type.toLowerCase() === "clock" || m.type.toLowerCase() === "hours")
-  const hoursVal = hoursMethod?.value || "Mon - Fri : 08.00-17.00\nSat - Sun : Closed"
+  const hoursVal = hoursMethod?.value || "Senin - Sabtu: 08.00 - 17.00 WIB"
 
   // Map settings
   const loc = contact.locations[0]
-  const mapEmbedUrl = loc?.mapEmbedUrl || "https://maps.google.com/maps?q=Pesantren%20Al%20Itqan%20Jatisampurna%20Bekasi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+  const mapEmbedUrl = loc?.mapEmbedUrl || "https://maps.google.com/maps?q=Desa+Babat+Kecamatan+Penukal+Kabupaten+PALI+Sumatera+Selatan&t=&z=15&ie=UTF8&iwloc=&output=embed"
 
   // Social icon helper
   const getSocialIcon = (platform: string) => {
