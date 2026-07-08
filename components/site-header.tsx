@@ -145,7 +145,7 @@ export function SiteHeader({
               </SheetTrigger>
               <SheetContent side="left" showCloseButton={false} className="w-full max-w-[300px] border-r border-border bg-white rounded-none p-0 flex flex-col">
                 {/* Drawer Header — navy */}
-                <div className="flex items-center justify-between p-4 bg-[#1e3a5f] border-b border-white/10">
+                <div className="flex items-center justify-between p-4 bg-[#0f2244] border-b border-white/10">
                   <div>
                     <p className="font-heading text-sm font-bold text-white tracking-tight leading-tight uppercase">
                       {siteConfig.shortName}

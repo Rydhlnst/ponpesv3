@@ -45,7 +45,7 @@ export async function SiteFooter() {
 
   return (
     <>
-      <footer id="kontak" className="bg-[#1e3a5f] text-white">
+      <footer id="kontak" className="bg-[#0f2244] text-white">
         {/* Highlighted top banner */}
         <div className="w-full bg-primary px-4 py-5 text-center">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary-foreground/80">Pondok Pesantren</p>
@@ -130,7 +130,7 @@ export async function SiteFooter() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-6 text-center text-xs text-white/60 bg-[#0f2236]">
+      <div className="border-t border-white/10 py-6 text-center text-xs text-white/60 bg-[#070f22]">
         {footerSection.copyrightText}
       </div>
     </footer>
